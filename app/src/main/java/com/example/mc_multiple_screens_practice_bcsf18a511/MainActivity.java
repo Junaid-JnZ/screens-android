@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:+923001245678"));
+                intent.setData(Uri.parse("tel:+923160494606"));
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         openGitHubBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Uri webpage = Uri.parse("https://github.com/AhsanRiaz9/MC_Intent_Multiple_Screen_Practice");
+                Uri webpage = Uri.parse("https://github.com/Junaid-JnZ/screens-android.git");
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
